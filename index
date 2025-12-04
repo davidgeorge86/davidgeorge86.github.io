@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Web projects by David G Beastall</title>
+</head>
+<body>
+<h1>Projects</h1>
+
+<section>
+
+  <h2><a href="https://www.codecademy.com/">Code Cademy</a> Course Projects</h2>
+  
+  <ul>
+    <li><a href="#">Dasmoto's Arts and Crafts</a></li>
+    <li><a href="#">Tea Cozy</a></li>
+  </ul>
+  
+  <p>Links are not yet connected!</p>
+
+</section>
+
+</body>
+</html>
