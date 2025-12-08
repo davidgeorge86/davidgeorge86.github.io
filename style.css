@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/* Colors */
+
+:root {
+	--background: hsl(233, 13%, 13%);
+	--light-grey: hsl(0, 0%, 80%);
+}
+
+/* Utilities */
+
+.visually-hidden {
+	display: none;
+}
+
+/* Fonts */
+
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-font {
+	font-family: 'Roboto', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: inherit;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: var(--background);
+	color: #999;
+
+	font-family: 'Roboto', sans-serif;
+	padding-block: 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 0.3em;
+	color: orange;
+}
+
+a {
+	color: orange;
+	text-decoration: none;
+
+	&:hover {
+		color: white;
+	}
+}
+
+p {
+	font-size: clamp(11px, calc(0.8em + 0.1vw), 72px);
+	line-height: 1.5;
+	margin-bottom: 1em;
+	max-width: 75%;
+}
+
+h1 {
+	font-size: 3em;
+	/* color: darkblue; */
+}
+
+h1.site-title {
+	text-align: center;
+	padding-block: 0.7em;
+}
+
+h2 {
+	/* color: darkblue; */
+	/* border-bottom: 0.1em solid rgb(0, 143, 209); */
+	font-size: 2em;
+	line-height: 1.3;
+	margin-bottom: 1em;
+}
+
+h3 {
+	font-weight: 500;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 1.3em;
+}
+
+h5 {
+	color: inherit;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+.project-list {
+	margin-block: 1.5em;
+	padding-left: 0;
+
+	> li {
+		margin: 1.5em 0;
+		list-style: none;
+		transition: padding 0.3s ease-out;
+
+		&:hover {
+			padding-left: 1em;
+		}
+	}
+
+	> li p:last-child {
+		margin-bottom: 0 !important;
+		/* color: red; */
+	}
+
+	li::marker {
+		/* color: darkblue; */
+	}
+}
+
+.container {
+	width: clamp(250px, 1100px, 3000px);
+	margin-inline: auto;
+}
+
+section {
+	margin-bottom: 4em;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-tags {
+	/* margin-block: 1em; */
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	a {
+		background: var(--background);
+		filter: brightness(80%);
+		/* color: lightskyblue; */
+		color: #666;
+		font-size: 0.7em;
+		/* border: 1px solid lightskyblue; */
+		padding: 0.2em 0.7em;
+		text-decoration: none;
+		border-radius: 1em;
+		text-align: center;
+		vertical-align: middle;
+		line-height: 100%;
+
+		&:hover {
+			color: var(--light-grey);
+			filter: brightness(110%);
+		}
+	}
+}
