@@ -9,8 +9,13 @@
 
 :root {
 	--background: hsl(233, 13%, 13%);
+	--link-color: var(--orange);
+	--heading-color: var(--orange);
+	--title-color: var(--orange);
+	--category-heading-color: var(--white);
+
 	--light-grey: hsl(0, 0%, 80%);
-	--dark-grey: ;
+	--dark-grey: hsl(0, 0%, 10%);
 	--white: hsl(0, 0%, 100%);
 	--orange: hsl(39, 100%, 50%);
 }
@@ -59,11 +64,11 @@ h4,
 h5,
 h6 {
 	margin-bottom: 0.3em;
-	color: var(--orange);
+	color: var(--heading-color);
 }
 
 a {
-	color: var(--orange);
+	color: var(--link-color);
 	text-decoration: none;
 
 	&:hover {
@@ -81,7 +86,7 @@ p {
 h1 {
 	font-size: 3em;
 	font-weight: 600;
-	/* color: darkblue; */
+	color: var(--title-color);
 }
 
 h1.site-title {
