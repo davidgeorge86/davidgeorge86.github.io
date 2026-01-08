@@ -9,6 +9,7 @@
 
 :root {
 	--background: hsl(233, 13%, 13%);
+	/* --background: hsl(274, 58%, 38%); */
 	--link-color: var(--orange);
 	--heading-color: var(--orange);
 	--title-color: var(--light-grey);
@@ -161,6 +162,10 @@ h5 {
 .project-list {
 	margin-block: 1.5em;
 	padding-left: 0;
+
+	hgroup {
+		margin-bottom: 1em;
+	}
 
 	h5 {
 		color: var(--white);
