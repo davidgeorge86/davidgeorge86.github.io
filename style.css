@@ -215,6 +215,36 @@ section {
 	border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+.cv {
+	tbody {
+		tr {
+			td,
+			th {
+				/* width: 25%; */
+				padding: 0.3em;
+			}
+		}
+	}
+
+	section {
+		border: 0;
+	}
+
+	.label {
+		text-align: right;
+	}
+
+	.personal-details {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.skills-matrix {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
 .project-tags {
 	/* margin-block: 1em; */
 	margin: 0;
